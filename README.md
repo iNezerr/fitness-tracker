@@ -1,5 +1,5 @@
-# FitTrack - Workout Tracker App (WIP)
-This is a work-in-progress (WIP) repository for a web application named FitTrack. FitTrack allows users to track their workouts and weight progress over time.
+# FitTrack - Workout Tracker App
+This is a web application named FitTrack. FitTrack allows users to track their workouts and weight progress over time.
 
 ## Features:
 
