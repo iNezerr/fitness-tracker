@@ -3,7 +3,7 @@ This is a web application named FitTrack. FitTrack allows users to track their w
 
 ## Features:
 
-Log workout details (exercise, sets, reps, weight, duration)
+Log workout details (exercise, sets, reps, weight, duration).
 Track weight changes and visualize trends
 Calculate workout intensity and monitor progress
 
