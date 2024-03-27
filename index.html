@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack</title>
+    <!-- MDBBootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Workout Logging Section -->
+            <div class="col-md-4">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Workout Logging
+                    </div>
+                    <div class="card-body">
+                        <!-- Form for workout logging -->
+                        <form id="workoutForm">
+                            <div class="mb-3">
+                                <label for="exerciseSelect" class="form-label">Exercise</label>
+                                <select class="form-select" id="exerciseSelect">
+                                    <option selected>Select Exercise</option>
+                                    <option value="Squats">Squats</option>
+                                    <option value="Push-ups">Push-ups</option>
+                                    <option value="Lunges">Lunges</option>
+                                    <!-- Add more exercise options as needed -->
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="setsInput" class="form-label">Sets</label>
+                                <input type="number" class="form-control" id="setsInput" placeholder="Enter sets">
+                            </div>
+                            <div class="mb-3">
+                                <label for="repsInput" class="form-label">Reps</label>
+                                <input type="number" class="form-control" id="repsInput" placeholder="Enter reps">
+                            </div>
+                            <div class="mb-3">
+                                <label for="weightInput" class="form-label">Weight (lbs)</label>
+                                <input type="number" class="form-control" id="weightInput" placeholder="Enter weight">
+                            </div>
+                            <div class="mb-3">
+                                <label for="durationInput" class="form-label">Duration (min)</label>
+                                <input type="number" class="form-control" id="durationInput" placeholder="Enter duration">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log Workout</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weight Tracking Section -->
+            <div class="col-md-4">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Weight Tracking
+                    </div>
+                    <div class="card-body">
+                        <!-- Form for weight tracking -->
+                        <form id="weightForm">
+                            <div class="mb-3">
+                                <label for="weightInput" class="form-label">Weight (lbs)</label>
+                                <input type="number" class="form-control" id="weightInput" placeholder="Enter weight">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dateInput" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="dateInput">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Track Weight</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Visualization Section -->
+            <div class="col-md-4">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Progress Visualization
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart for progress visualization -->
+                        <canvas id="progressChart" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- MDBBootstrap Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
